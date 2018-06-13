@@ -2,21 +2,15 @@
 <html>
 <head>
 
-	<nav>
-		<div style="width: 10%;">
-			<a href="contact.html" style="font-family: monospace; color: white; font-size: 20px;">Help</a>
-		</div>
-		<div style="width: 10%;">
-			<a href="index.html" style="font-family: monospace; color: white; font-size: 20px;">Search</a>
-		</div>
-		<div style="width: 10%;">
-			<a href="https://seasoned.atlassian.net/browse/SS-2074?filter=11645" target="_blank" style="font-family: monospace; color: white; font-size: 20px;">JIRA</a>
-		</div>
-		<div style="width: 10%;">
-			<a href="home.html" style="font-family: monospace; color: white; font-size: 20px;">HOME</a>
-		</div>
-	</nav>
+	<div class="topnav">  
+		<a style="font-family: monospace; font-size: 20px; color: white;" class="active" href="home.html">Home</a>
+		<a style="font-family: monospace; font-size: 20px; color: white;" href="contact.html">Help</a>
+		<a style="font-family: monospace; font-size: 20px; color: white;" href="index.html">Search</a>
+		<a style="font-family: monospace; font-size: 20px; color: white;" href="https://seasoned.atlassian.net/browse/SS-2074?filter=11645" target="_blank">JIRA Open Sprints</a>
+	</div>
 
+
+	<link rel="stylesheet" type="text/css" href="contact.css">
 	<link rel="stylesheet" type="text/css" href="index.css">
 	<script type="text/javascript" src="index.js"></script>		
 	<script type="text/javascript" src="result.js"></script>
@@ -26,6 +20,39 @@
 
 </head>
 <body>
-	
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<div class="container">
+		<form action="home.html">
+			<label for="fname">First Name:</label>
+			<br>
+			<input type="text" id="fname" name="firstname" placeholder="Your name..">
+			<br>
+			<label for="lname">Last Name:</label>
+			<br>
+			<input type="text" id="lname" name="lastname" placeholder="Your last name..">
+			<br>
+			<label for="email">Email Address:</label>
+			<br>
+			<input type="text" id="email" name="email" placeholder="example@email.com">
+			<br>
+			<label for="subject">What's the issue?</label>
+			<br>
+			<textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+			<br>
+			<input type="submit" value="Submit">
+		</form>
+	</div>
+
 </body>
 </html>
