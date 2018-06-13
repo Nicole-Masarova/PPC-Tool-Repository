@@ -1,0 +1,9 @@
+body {
+	background-image: url("https://image.ibb.co/d7LF7o/seasoned.jpg");
+}
+div {
+	float: center;
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
