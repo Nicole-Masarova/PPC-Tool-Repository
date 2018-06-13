@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-		<script type="text/javascript" src="result.js"></script>
-
+<!-- 		<script type="text/javascript" src="result.js"></script>
+ -->
 	<div class="topnav">  
 		<a style="font-family: monospace; font-size: 20px; color: white;" class="active" href="home.html">Home</a>
 		<a style="font-family: monospace; font-size: 20px; color: white;" href="contact.html">Help</a>
@@ -11,9 +11,8 @@
 	</div>
 
 
-	<link rel="stylesheet" type="text/css" href="index.css">
-	<script type="text/javascript" src="index.js"></script>		
-	<script type="text/javascript" src="result.js"></script>
+	<link rel="stylesheet" type="text/css" href="index.css">		
+<!-- 	<script type="text/javascript" src="result.js"></script> -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<title>PCC Tool</title>
 </head>
@@ -25,11 +24,29 @@
 		<p style="font-size: 18px;">this is where your data should be loading. if it does not load promptly, please send a message to <p style="color: blue; font-size: 18px;">nicole.masarova@seasoned.co <p style="color: black; font-size: 18px;">thank you.</p> </p> </p>
 	</div>
 	<script>
-		function getResponse(){
-			var request = new XMLHttpRequest();
-			request.open("GET", "https://www.seasoned.co/services/services/rest/config", false(async flag), "userName", "password");
-			request.send();
-		};
+// const http = require("https");
+
+// http.get('https://www.seasoned.co/services/services/rest/config',function(resp){
+//   let data = '';
+ 
+//   // A chunk of data has been recieved.
+//   resp.on('data', (chunk) => {
+//     data += chunk;
+//   });
+     console.log("Whoa! That's a lot of information.");
+  // The whole response has been received. Print out the result.
+// });
+
+fetch('https://www.seasoned.co/services/services/rest/config') // Call the fetch function passing the url of the API as a parameter
+.then(function() {
+    // Your code for handling the data you get from the API
+    console.log("hi")
+})
+.catch(function() {
+    // This is where you run code if the server returns any errors
+    console.log("error")
+});
+
 	</script>
 </body>
 </html>
