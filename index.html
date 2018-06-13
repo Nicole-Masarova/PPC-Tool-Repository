@@ -2,9 +2,24 @@
 <html>
 <head>
 
+	<nav>
+		<div style="width: 10%;">
+			<a href="contact.html" style="font-family: monospace; color: white; font-size: 20px;">Help</a>
+		</div>
+		<div style="width: 10%;">
+			<a href="index.html" style="font-family: monospace; color: white; font-size: 20px;">Search</a>
+		</div>
+		<div style="width: 10%;">
+			<a href="https://seasoned.atlassian.net/browse/SS-2074?filter=11645" target="_blank" style="font-family: monospace; color: white; font-size: 20px;">JIRA</a>
+		</div>
+		<div style="width: 10%;">
+			<a href="home.html" style="font-family: monospace; color: white; font-size: 20px;">HOME</a>
+		</div>
+	</nav>
 
 	<link rel="stylesheet" type="text/css" href="index.css">
-	<script type="text/javascript" src="index.js"></script>
+	<script type="text/javascript" src="index.js"></script>		
+	<script type="text/javascript" src="result.js"></script>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<title>PCC Tool</title>
 
@@ -21,10 +36,8 @@
 		<p style="font-family: Helvetica; font-size: 18px;">All of the data provided by Jira will be split into a few classes. The things you can search up are either <b> [insert names of the classes the data is organized into]. </b> If you recieve an error, double check to make sure it is not mispelled.</p>
 		<p style="font-family: Helvetica;">Write something in the search field and press "ENTER".</p>
 
-		</script>
-
 		<form action="result.html">
-			<input type="search" id="searchInput" onsearch="myFunction()" name="searchbutton">
+			<input type="search" id="searchInput" onsearch="searchInput" name="searchbutton">
 			<button type="submit" style="font-family: sans-serif;">
 				<i class="fa fa-search"></i>
 			</button>
