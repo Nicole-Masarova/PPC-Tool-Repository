@@ -49,14 +49,18 @@
 	// });
 
 
-	fetch('https://www.seasoned.co/services/services/rest/config', {'mode': 'no-cors'}).then(function(response) {
-  			console.log("response", response.json());
-  			return response.text();
-		}).then(function(text) {
-			console.log("okay the comm was successful");
-  			console.log(('https://www.seasoned.co/services/services/rest/config').textContent = text);
-  			return text;
-		});
+	fetch('https://pokeapi.co/api/v2/pokemon/7/').then(function(response) {
+			console.log('after first then');
+			var json = response.json();
+  			console.log("response", json);
+  			console.log("okay the comm was successful");
+  			// console.log(JSON.stringify(json));
+  			console.log("you should be able to see this too")
+  			return json;
+		})
+	.then((dataResponse) => {
+		console.log('dataResponse: ', dataResponse);
+	});
 
 
 	</script>
