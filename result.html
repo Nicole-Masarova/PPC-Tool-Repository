@@ -4,7 +4,6 @@
 <!-- 		<script type="text/javascript" src="result.js"></script>
  -->
 	<div class="topnav">  
-		<a style="font-family: monospace; font-size: 20px; color: white;" class="active" href="home.html">Home</a>
 		<a style="font-family: monospace; font-size: 20px; color: white;" href="contact.html">Help</a>
 		<a style="font-family: monospace; font-size: 20px; color: white;" href="index.html">Search</a>
 		<a style="font-family: monospace; font-size: 20px; color: white;" href="https://seasoned.atlassian.net/browse/SS-2074?filter=11645" target="_blank">JIRA Open Sprints</a>
@@ -21,7 +20,7 @@
 	<br>
 	<br>
 	<div style ="background-color: pink; width: 80%; float: center; display: block; margin-left: auto; margin-right: auto; padding: 20px; text-align: center;">
-		<p style="font-size: 18px;">this is where your data should be loading. if it does not load promptly, please send a message to <p style="color: blue; font-size: 18px;">nicole.masarova@seasoned.co <p style="color: black; font-size: 18px;">thank you.</p> </p> </p>
+		<p style="font-size: 18px;">EX TEXT: this is where your data should be loading. if it does not load promptly, please send a message to <p style="color: blue; font-size: 18px;">nicole.masarova@seasoned.co <p style="color: black; font-size: 18px;">thank you.</p> </p> </p>
 	</div>
 	<script>
 
@@ -51,9 +50,12 @@
 
 
 	fetch('https://www.seasoned.co/services/services/rest/config', {'mode': 'no-cors'}).then(function(response) {
-  			return response.text()
+  			console.log("response", response.json());
+  			return response.text();
 		}).then(function(text) {
+			console.log("okay the comm was successful");
   			console.log(('https://www.seasoned.co/services/services/rest/config').textContent = text);
+  			return text;
 		});
 
 
