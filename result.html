@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-		<script type="text/javascript" src="result.js"></script>
+		<script type="text/javascript" src="scripts/result.js"></script>
 
-	<div class="topnav">  
+	<div class="topnav">
 		<a style="font-family: monospace; font-size: 20px; color: white;" class="active" href="home.html">Home</a>
 		<a style="font-family: monospace; font-size: 20px; color: white;" href="contact.html">Help</a>
 		<a style="font-family: monospace; font-size: 20px; color: white;" href="index.html">Search</a>
@@ -11,9 +11,8 @@
 	</div>
 
 
-	<link rel="stylesheet" type="text/css" href="index.css">
-	<script type="text/javascript" src="index.js"></script>		
-	<script type="text/javascript" src="result.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<script type="text/javascript" src="scripts/result.js"></script>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<title>PCC Tool</title>
 </head>
@@ -24,12 +23,16 @@
 	<div style ="background-color: pink; width: 80%; float: center; display: block; margin-left: auto; margin-right: auto; padding: 20px; text-align: center;">
 		<p style="font-size: 18px;">this is where your data should be loading. if it does not load promptly, please send a message to <p style="color: blue; font-size: 18px;">nicole.masarova@seasoned.co <p style="color: black; font-size: 18px;">thank you.</p> </p> </p>
 	</div>
-	<script>
-		function getResponse(){
+	<!-- <script>
+		function getResponse() {
 			var request = new XMLHttpRequest();
-			request.open("GET", "https://www.seasoned.co/services/services/rest/config", false(async flag), "userName", "password");
+			request.open("GET",
+						"https://www.seasoned.co/services/services/rest/config",
+						false(async,flag),
+						"userName",
+						"password");
 			request.send();
 		};
-	</script>
+	</script> -->
 </body>
 </html>
