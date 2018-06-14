@@ -24,29 +24,30 @@
 		<p style="font-size: 18px;">this is where your data should be loading. if it does not load promptly, please send a message to <p style="color: blue; font-size: 18px;">nicole.masarova@seasoned.co <p style="color: black; font-size: 18px;">thank you.</p> </p> </p>
 	</div>
 	<script>
-// const http = require("https");
+	// const http = require("https");
 
-// http.get('https://www.seasoned.co/services/services/rest/config',function(resp){
-//   let data = '';
+	// http.get('https://www.seasoned.co/services/services/rest/config',function(resp){
+	//   let data = '';
  
-//   // A chunk of data has been recieved.
-//   resp.on('data', (chunk) => {
-//     data += chunk;
-//   });
-     console.log("Whoa! That's a lot of information.");
-  // The whole response has been received. Print out the result.
-// });
+	//   // A chunk of data has been recieved.
+	//   resp.on('data', (chunk) => {
+	//     data += chunk;
+	//   });
+	import (GlobalFetch.fetch); 
+    console.log("Whoa! That's a lot of information.");
+  	// The whole response has been received. Print out the result.
+	// });
 
-fetch('https://www.seasoned.co/services/services/rest/config') // Call the fetch function passing the url of the API as a parameter
-.then(function() {
+	fetch('https://www.seasoned.co/services/services/rest/config') 
+	// Call the fetch function passing the url of the API as a parameter
+	.then(function() {
     // Your code for handling the data you get from the API
-    console.log("hi")
-})
-.catch(function() {
+    	console.log("hi")
+	})
+	.catch(function() {
     // This is where you run code if the server returns any errors
-    console.log("error")
-});
-
+	    console.log("error")
+	});
 	</script>
 </body>
 </html>
